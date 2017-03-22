@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>DEV 6B Herkansing</h1>
+    <p class="lead">Herkansing voor het vak 6B, in deze applicatie vind je 2 engelse taal modules.</p>
+</div>
+
+<div class="row">
+    For the second <a href="{{ url_for('intermediate_module') }}">exercise</a>, a little example may be needed;
+    <h2>Use of Present Perfect Progressive</h2>
+    <ul>
+        <li>puts emphasis on the duration or course of an action (not the result) <p>Example: She has been writing for two hours.</p></li>
+        <li>action that recently stopped or is still going on <p>Example: I have been living here since 2001.</p></li>
+        <li>finished action that influenced the present <p>Example: I have been working all afternoon.</p></li>
+        
+    </ul>
+</div>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+<h3>{{ message }}</h3>
+
+<p>Fill in the missing part of the sentence.</p>
+
+<form method="POST">
+    <p>I ... in this office since last summer. <input type="text" name="1" /> (to work) {{data[0] }}</p> 
+    <p>... this course for a long time? <input type="text" name="2" /> (you / to do) {{data[1] }}</p>
+    <p>I ... this car for more than ten year. <input type="text" name="3" /> (to drive) {{data[2] }}</p>
+    <p>She ... the party since the beginning of the month. <input type="text" name="4" /> (to plan) {{data[3] }}</p>
+    <p>George ... the same stories for several years. <input type="text" name="5" /> (to tell) {{data[4] }}</p>
+    <p>What ... since th elast time I saw you? <input type="text" name="6" /> (you / to do) {{data[5] }}</p>
+    <p>You ... than letter for more than two hours. <input type="text" name="7" /> (to write) {{data[6] }}</p>
+    <p>He ... ill for a few days. <input type="text" name="8" /> (to feel) {{data[7] }}
+</p> 
+    <input type="submit" name="action"/>
+</form>
+
+
+
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+<h3>{{ message }}</h3>
+
+<div class="jumbotron">
+    <h1>Stats</h1>
+    <p class="lead">A simple overview of your results.</p>
+</div>
+
+<div class="row">
+    <div class="table-responsive">
+        <table class="table">
+            <tr>
+                <td>Last exercise correct answers</td>
+                <td>{{lastExercise[0]}}</td>
+            </tr>
+            <tr>
+                <td>Last exercise wrong answers</td>
+                <td>{{lastExercise[1]}}</td>
+            </tr>
+            <tr>
+                <td>
+                    Total correct answers
+                </td>
+                <td>
+                    {{results[0]}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Total wrong answers
+                </td>
+                <td>
+                    {{results[1]}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Total exercises done
+                </td>
+                <td>
+                    {{results[2]}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

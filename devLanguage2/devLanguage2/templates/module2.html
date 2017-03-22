@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}</h2>
+<h3>{{ message }}</h3>
+
+<p>Fill in the missing part of the sentence.</p>
+
+<form method="POST">
+    <p>He ... in this company since 1985. <input type="text" name="1" /> (work) {{frm[0] }}</p>
+    <p>I ... for you since two o'clock. <input type="text" name="2" /> (wait) {{frm[1] }}</p>
+    <p>Mary ... in Germany since 1992. <input type="text" name="3" /> (live) {{frm[2] }}</p>
+    <p>Why is he so tired? He ... tennis for five hours. <input type="text" name="4" /> (play) {{frm[3] }}</p>
+    <p>How long ... English? <input type="text" name="5" /> (learn / you) {{frm[4] }}</p>
+    <p>We ... the motorway for more than an hour.<input type="text" name="6" /> (look for) {{frm[5] }}</p>
+    <p>I ... without electricity for two weeks.<input type="text" name="7" /> (live) {{frm[6] }}</p>
+    <p>The film ... for ten minutes yet, but there's a commercial break already. <input type="text" name="8" /> (run / not) {{frm[7] }}</p>
+    <input type="submit" name="action" />
+</form>
+
+
+
+{% endblock %}
