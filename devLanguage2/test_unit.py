@@ -11,6 +11,11 @@ class Test_unit(unittest.TestCase):
     def test_A(self):
         result = self.app.get("/")
         self.assertEqual(result.status_code,200)
-
+    
+    def sessionTest(self):
+        with self.app.session_transaction() as session:
+            session['results'] = [0,0,0]
+        result = self.app.get("/")
+        self.assertEqual(result.status_code,200)
 if __name__ == '__main__':
     unittest.main()
