@@ -9,7 +9,6 @@ from devLanguage2 import app
 @app.route('/')
 @app.route('/home')
 def home():
-
    if 'results' in session:
        results = session['results']
    else:
